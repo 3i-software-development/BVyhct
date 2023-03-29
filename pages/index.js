@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Deapartments from '@/views/home/Deapartments';
 import News from '@/views/home/News';
 import Introduce2 from '@/views/home/Introduce2';
+import DoctorList from '@/views/home/DoctorList';
 
 const cx = classNames.bind(style);
 
@@ -29,6 +30,7 @@ export default function Home() {
       <Introduce/>
       <Deapartments/>
       <News/>
+      <DoctorList/>
      </div>
     </>
   )

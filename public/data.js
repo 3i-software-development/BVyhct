@@ -222,3 +222,26 @@ export const departments = [
 
 ]
 // ];
+
+export const ListDoctor = [
+  {
+    img: "/assets/icon-bacsi-2.png",
+    title: "Tên bác sĩ 1",
+    city: "Hà nội"
+  },
+  {
+    img: "/assets/icon-bacsi-2.png",
+    title: "Tên bác sĩ 2",
+    city: "Hà nội"
+  },
+  {
+    img: "/assets/icon-bacsi-2.png",
+    title: "Tên bác sĩ 3",
+    city: "Hà nội"
+  },
+  {
+    img: "/assets/icon-bacsi-2.png",
+    title: "Tên bác sĩ 4",
+    city: "Hà nội"
+  }
+]

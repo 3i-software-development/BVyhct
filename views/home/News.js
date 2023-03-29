@@ -18,7 +18,7 @@ const News = () => {
         <div className={cx('news-list')}>
             {ListNews.slice(0,3).map((d,i)=>
             <div className={cx('news-item-container')} key={i} >
-             <Newscard data={d}/>
+              <Newscard data={d}/>
             </div>
             )}
         </div>

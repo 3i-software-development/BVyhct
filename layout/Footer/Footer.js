@@ -133,19 +133,23 @@ const Footer = () => {
           </section>
         </div>
 
-        <div class='p-4' style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+        <div className={cx('copy-right')} style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}>
           <div className="container">
             <div className='row'>
-            <div className="col-md-8" >
-            Copyright ©2016 BVTHCTHN. <b style={{color: '#0392ce'}}>All Rights Reserved</b>
-            </div>
-            <div className="col-md-4">
-                  <ul className={cx('footer-social')}>
-                    <li><a><TiSocialFacebook className={cx('icon-social')}/></a></li>
-                    <li><a><SiZalo className={cx('icon-social')}/></a></li>
-                    <li><a><AiOutlineGooglePlus className={cx('icon-social')}/></a></li>
-                  </ul>
-            </div>
+
+              <div className="col-md-8" >
+                <div className={cx('copy-right-text')}>
+                  Copyright ©2016 BVTHCTHN. <b style={{ color: '#0392ce' }}>All Rights Reserved</b>
+                </div>
+              </div>
+
+              <div className="col-md-4">
+                <ul className={cx('footer-social')}>
+                  <li><a><TiSocialFacebook className={cx('icon-social1')} /></a></li>
+                  <li><a><SiZalo className={cx('icon-social2')} /></a></li>
+                  <li><a><AiOutlineGooglePlus className={cx('icon-social3')} /></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
