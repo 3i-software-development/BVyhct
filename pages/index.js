@@ -10,6 +10,7 @@ import Deapartments from '@/views/home/Deapartments';
 import News from '@/views/home/News';
 import Introduce2 from '@/views/home/Introduce2';
 import Logo from '@/public/assets/logo.png';
+import Price from '@/views/service/price';
 
 const cx = classNames.bind(style);
 
@@ -31,6 +32,7 @@ export default function Home() {
       <Introduce/>
       <Deapartments/>
       <News/>
+      <Price />
      </div>
     </>
   )
