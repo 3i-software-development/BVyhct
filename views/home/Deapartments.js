@@ -11,7 +11,6 @@ import { IoNutritionOutline} from "react-icons/io";
 
 const cx = classNames.bind(style);
 
-
 function Deapartments() {
 
   const DepartmentLists = departments.map((DepartmentLists) => (

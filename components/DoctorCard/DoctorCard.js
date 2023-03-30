@@ -20,16 +20,20 @@ const DoctorCard = ({ data }) => {
                 </div>
 
                 <div className={cx('overlay-style')}>
+
                     <div className={cx('box')}>
                         <div className={cx('top')}>
                             <h4>Chuyên khoa</h4>
                         </div>
+
                         <hr style={{width:"70px"}}/>
+                        
                         <div className={cx('bottom')}>
                             <p><FiPhone/> 012.345.678</p>
                             <p><FiMail/> yhct@yhct.com</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div className={cx('text-holder')}>
