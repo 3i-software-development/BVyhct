@@ -3,6 +3,9 @@ import { MdAirlineSeatLegroomExtra} from "react-icons/md";
 import { GiHeartOrgan,GiTripleNeedle,GiSkeletalHand,GiMedicines} from "react-icons/gi";
 import { IoNutritionOutline} from "react-icons/io";
 import { FaStethoscope } from "react-icons/fa";
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+dayjs.extend(customParseFormat);
 
 export const MenuLink = [
   {
@@ -56,7 +59,7 @@ export const MenuLink = [
   },
   {
     title: "Khác",
-    link: "/",
+    link: "/orther",
   },
 ];
 
@@ -217,7 +220,7 @@ export const departments = [
             "Tư vấn và điều trị bằng chế độ dinh dưỡng.",
             "Truyền thông về dinh dưỡng và an toàn thực phẩm,…",
         ],
-        icon:<IoNutritionOutline/>,
+        icon:<GiMedicines/>,
     },
 
 ]

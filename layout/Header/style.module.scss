@@ -8,7 +8,7 @@
 .call-ambulance{
     display: flex;
     justify-content: space-between;
-    padding: 5px 15%;
+    padding: 5px 5%;
      div{
         display: flex;
         align-items: center;
@@ -20,19 +20,23 @@
 }
 .top-header{
     display: flex;
-    padding: 0 15%;
+    padding: 0 5%;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 .logo{
     display: flex;
-    flex-direction:column;
     align-items: center;
-    justify-content: flex-start;
     img{
-     height: 100px !important;
+     height: 80px !important;
      width: auto !important;
    }
+}
+.logo-name{
+    h5{
+        color:#a13f25;
+    }
 }
 .item-contact{
     // padding: 20px 0;
@@ -46,7 +50,7 @@
 }
 .icon-header{
     font-size: 40px;
-    color:#0392ce;
+    color:var(--color-df);
 }
 .text-contact{
     padding: 0 20px;
@@ -54,34 +58,34 @@
    p{
     margin-bottom: 0;
    }
-    .text-title{
-        color:#0392ce;
-        font-weight: 600;
+    
+}
+.text-title{
+    color:var(--color-df);
+    font-weight: 600;
+    margin: 0;
 
-    }
 }
 .search{
-    padding: 20px;
     width: 20%;
-    padding-right: 0;
     position: relative;
     input{
         width: 100%;
-        padding: 10px 20px;
-        border-radius: 20px;
+        padding: 10px;
+        border-radius: 5px;
         border: 0.5px rgb(139, 138, 138,0.4) solid;
     }
     svg{
         position: absolute;
-        top:30px;
-        right: 30px;
+        top:10px;
+        right: 10px;
         font-size: 20px;
     }
 }
 
 //bot
 .bot-header{
-    padding:0 15%;
+    padding:0 5%;
     border: 0.5px rgb(139, 138, 138,0.4) solid;
     display: flex;
     align-items: center;
@@ -90,19 +94,29 @@
         transition: 0.3s;
     }
     a:hover{
-        color: #0392ce !important;
+        color:var(--color-df) !important;
     }
-    top:10px;
-    position: sticky;
 }
 .book{
     height: 100%;
-    padding:20px;
-    background-color:#0392ce;
-    color: white;
-    border: 1px solid #0392ce;
+    border-radius: 5px;
+    padding: 20px;
+    color:var(--color-df);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color:var(--color-df);
+    // color: white;
+    // border: 1px solid var(--color-df);
     svg{
         margin-right: 10px;
+        font-size: 20px;
+    }
+}
+.book:hover{
+    // background-color:var(--color-df);
+    svg,p{
+        color: #016a97;
     }
 }
 .menu-link{
@@ -116,7 +130,7 @@
         display: none;
         position: absolute;
         width: fit-content;
-        background-color: #0392ce;
+        background-color: var(--color-df);
         top:100%;
         flex-direction: column;
         left: -20px;
@@ -137,16 +151,23 @@
         height: 1.5px;
         position: absolute;
         top: -1.5px;
-        background-color: #0392ce;
+        background-color: var(--color-df);
         transition: 0.3s;
     }
 }
 .menu-link:hover{
-    color: #0392ce;
+    color: var(--color-df);
     .list-link{
         display: flex;
     }
     .hr{
         width: 100%;
+    }
+}
+
+//responsive
+@media only screen and (max-width: 1200px) {
+    .item-contact{
+        display: none;
     }
 }

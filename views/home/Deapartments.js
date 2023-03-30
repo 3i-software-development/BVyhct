@@ -25,7 +25,7 @@ function Deapartments() {
             <div className={cx("departments-card-description","mx-3")}>
               <Card.Text >
                 {DepartmentLists.description.map((items, i) => (
-                  <li className={cx("departments-card-item")} key={i}>{items}</li>
+                  <span className={cx("departments-card-item")} key={i}>{items}</span>
                 ))}
               </Card.Text>
             </div>
