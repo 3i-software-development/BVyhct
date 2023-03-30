@@ -1,0 +1,152 @@
+.container{
+    padding: 15% 0 ;
+    p{
+        margin: 0;
+        color: gray;
+    }
+    svg{
+        color: var(--color-df);
+    }
+    h5{
+        color: var(--color-df);
+        margin-bottom: 20px;
+    }
+    h3{
+        padding:0  15%;
+        color: var(--color-df2);
+    }
+}
+.form{
+    width: 70%;
+    padding: 2%;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    .form-left{
+        width: 50%;
+        padding-right: 5%;
+        border-right: 0.5px solid rgb(214, 214, 214);
+    }
+    .form-right{
+        width: 50%;
+        padding-left: 5%;
+    }
+    .form-item{
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+       
+        select,input{
+          padding: 10px 35px;
+          border: 0.5px solid rgb(204, 203, 203);
+          outline: none;
+          width: 100% ;
+        }
+
+        svg{
+            position: absolute;
+            top:12px;
+            left: 10px;
+            font-size: 20px;
+        }
+    }
+   .title{
+    margin:20px 0 ;
+    font-weight: 600;
+    color: black;
+   }
+   .list-date{
+    display: flex;
+    gap: 2%;
+    padding: 20px 0;
+    z-index: 4;
+    position: relative;
+    background-color: white;
+    .item-date{
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0;
+        border: 2px solid white;
+        border-radius: 5px;
+        font-weight: 600;
+        background-color: white;
+       p{
+        z-index: 3;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+       }
+        :first-child{
+            color: black !important;
+
+        }
+       
+    }
+    .item-date:hover{
+        border: 2px solid rgb(201, 200, 200);
+       }
+   }
+   .list-hour{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    background-color: white;
+    p{
+        width: 18%;
+        text-align: center;
+        padding: 10px 0;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    p:hover{
+        border: 2px solid rgb(201, 200, 200);
+    }
+   }
+   .active{
+    border: 2px solid var(--color-df) !important;
+    color: var(--color-df);
+   }
+   .check{
+    margin-bottom: 20px;
+    label{
+        margin-right: 10px;
+    }
+    input{
+        margin-right: 30px;
+    }
+   }
+   .text-area{
+    padding: 10px 20px;
+    border: 0.5px solid rgb(204, 203, 203);
+    outline: none;
+    width: 100% ;
+   }
+   .button{
+    padding: 10px 30px;
+    background-color: var(--color-df);
+    border: none;
+    color: white;
+    margin: 0 auto;
+    margin-top: 40px;
+    float: right;
+    border-radius: 5px;
+   }
+}  
+
+//datepick
+.date-container{
+    position: relative;
+}
+.datepick{
+    position: absolute;
+    top:10px;
+    z-index: 0;
+}
+.value-date{
+    padding: 10px 0;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+}

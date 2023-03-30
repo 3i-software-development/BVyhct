@@ -52,7 +52,15 @@ const Header = () => {
       <div className={cx("top-header")} >
         <div className={cx("logo")}>
           <Image src={Logo} width='200' height='200' alt='icon'/>
+          <div className={cx("logo-name")}>
+          <h5>BỆNH VIỆN Y HỌC CỔ TRUYỀN HÀ ĐÔNG</h5>
+          <p>Tận tâm - Thân thiện - Trách nhiệm - hiệu quả</p>
         </div>
+        </div>
+       
+        
+       
+
         <div className={cx("item-contact")}>
           <MdPhoneInTalk className={cx("icon-header")}/>
           <div className={cx("text-contact")}>
@@ -69,10 +77,11 @@ const Header = () => {
           </div>
         </div>
 
-        <div className={cx("search")}>
-          <input type="text" placeholder="--Tìm kiếm" />
-          <BiSearchAlt />
-        </div>
+      
+
+        <Link href='/booking' className={cx('book')}><FaCalendarAlt className={cx("icon-header")}/>
+        <p className={cx("text-title")}>ĐẶT LỊCH KHÁM</p>
+        </Link>
       </div>
       </div>
       <div className={cx("bot-header")}>
@@ -91,7 +100,11 @@ const Header = () => {
      <div className={cx("hr")}/>
      </Link>
      )}
-     <button className={cx('book')}><FaCalendarAlt/>Đặt lịch khám</button>
+      <div className={cx("search")}>
+          <input type="text" placeholder="Tìm kiếm" />
+          <BiSearchAlt />
+        </div>
+   
   </div>
     </div>
   );
