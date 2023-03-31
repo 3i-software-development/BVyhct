@@ -226,6 +226,24 @@ export const departments = [
 ]
 // ];
 
+export const ListTimeBook = [
+  '8:00','8:30','9:00','9:30','10:00','10:30','13:30','14:00','14:30','15:00','15:30','16:00'
+]
+export const ListDateBook = [
+  {
+    date:dayjs().format('D/M'),
+    text:'Hôm nay'
+  },
+  {
+    date:dayjs().add(1, 'day').format('D/M'),
+    text:'Ngày mai'
+  },
+  {
+    date:dayjs().add(2, 'day').format('D/M'),
+    text:'Ngày kia'
+  }
+]
+
 export const ListDoctor = [
   {
     img: "/banner/doctor.jpeg",
