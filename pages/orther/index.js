@@ -4,11 +4,10 @@ import classNames from "classnames/bind";
 import BannerImg from '@/components/Banner/BannerImg';
 import { FiChevronsRight } from "react-icons/fi";
 import Link from 'next/link';
+import Price from '@/views/service/price';
 
 
 const cx = classNames.bind(style);
-
-
 
 const Orther = () => {
 
@@ -164,7 +163,9 @@ const Orther = () => {
                             </p>
                         </div>
                     </div>}
-                    {buttonOrther == 3 && <div>333</div>}
+                    {buttonOrther == 3 && <div>
+                        <Price/>
+                        </div>}
 
                 </div>
 
