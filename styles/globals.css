@@ -134,3 +134,8 @@ a{
   color: black !important;
   text-decoration: none !important;
 }
+
+button{
+  border: none;
+  background: none;
+}

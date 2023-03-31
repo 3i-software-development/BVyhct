@@ -28,37 +28,36 @@
 .doctor-item:hover{
     .overlay-style{
         transition:  .9s ease;
-        transition-delay: .7s;
+        transition-delay: .3s;
         transform: translate3d(0px, 100%, 0px);    
     }
     // -webkit-transform: perspective(1px) translateZ(0);
     .text-holder {
         transition:  .9s ease;
-        transition-delay: .3s;
+        // transition-delay: .3s;
         transform: translate3d(0px, 100%, 0px);   
     }
  
 }
 
-.doctor-item:not(:hover){
-    .top{
-        right: 100%;
-        transform: translateX(50px);
-        transition: 1s ease;
-    }
-}
+// .doctor-item:not(:hover){
+//     .top{
+//         right: 100%;
+//         transform: translateX(50px);
+//         transition: 1s ease;
+//     }
+// }
 
 .overlay-style{
     color: rgb(255, 255, 255);
     background-color: rgba(3, 146, 206, 0.8);
-    bottom: 203px;
+    bottom: 100%;
     left: 0;
     overflow: hidden;
     position: absolute;
-    right: 0;
-    top: -203px;
-    padding: 0 20px;
-    display: block;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
     // transform: translate3d(0px, -100%, 0px);
     // transition: all .9s ease;
     // transition-delay: .5s;
@@ -71,19 +70,9 @@
     height: 100%;
 }
 
-.top{
-    margin-top:20px;
-    // position: relative;
-    // right: 100%;
-}
-
-.top:hover{
-
-}
-
-.bottom {
-
-}
+// .top{
+//     top:-100%;
+// }
 
 
 .text-holder {
