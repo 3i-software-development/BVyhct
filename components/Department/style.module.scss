@@ -4,7 +4,7 @@
     h5 {
         font-size: 25px;
         font-weight: 600;
-        margin-bottom: 3%;
+        margin-top: 3%;
         color: var(--color-df);
     }
 
@@ -15,10 +15,11 @@
 
     img {
         width: 100% !important;
+        height: auto;
     }
         
     .info-text {
-        padding: 5%;
+        padding: 0 5%;
     
         li {
             padding-bottom: 2%;

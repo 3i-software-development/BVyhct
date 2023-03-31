@@ -22,15 +22,15 @@ const Leftbar = () => {
                 <h5>Danh mục</h5>
                 <div className={cx('hours-list')}>
                     <div className={cx('hours-item')}>
-                        <p className={cx('day')}>Thứ 2 - Thứ 6 : </p>
+                        <p className={cx('day')}>Thứ 2 - Thứ 6  </p>
                         <p>8:00 - 10:00</p>
                     </div>
                     <div className={cx('hours-item')}>
-                        <p className={cx('day')}>Thứ 7 : </p>
+                        <p className={cx('day')}>Thứ 7  </p>
                         <p>8:00 - 10:00</p>
                     </div>
                     <div className={cx('hours-item')}>
-                        <p className={cx('day')}>Chủ nhật : </p>
+                        <p className={cx('day')}>Chủ nhật  </p>
                         <p>8:00 - 10:00</p>
                     </div>
                 </div>

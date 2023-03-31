@@ -11,8 +11,8 @@ const DepartmantInfo = () => {
   return (
     <div className={cx('info-container')}>
       <div className={cx('info-description')}>
+        <Image src={img} width='800' height='500' alt='department-description' />
         <h5>Chức năng, nhiệm vụ :</h5>
-        <Image src={img} width='800' height='400' alt='department-description' />
         <ul className={cx('info-text')}>
           <li>
             Khoa XN&CĐHA là khoa cận lâm sàng có chức năng thực hiện các kỹ thuật xét nghiệm, chẩn đoán hình ảnh và thăm dò chức năng để chẩn đoán và theo dõi kết quả điều trị bệnh nhân. Phục vụ cho nhu cầu khám và chữa bệnh
