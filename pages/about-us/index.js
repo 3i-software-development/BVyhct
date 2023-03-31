@@ -4,7 +4,7 @@ import classNames from "classnames/bind";
 import Image from "next/image";
 import YHDT from "@/public/introduce/yhdt.jpg";
 import YHCY from "@/public/introduce/yhcy.jpg";
-import BannerImg from "../components/Banner/BannerImg.js";
+import BannerImg from "@/components/Banner/BannerImg.js";
 
 const cx = classNames.bind(style);
 
@@ -21,7 +21,7 @@ const index = () => {
         <p>Ngày đầu thành lập Bệnh viện Đông y Hà Tây chỉ có quy mô 50 giường bệnh, đặt tại Khoa nhi của Bệnh viện Sơn Tây (Thị xã Sơn Tây) với 35 cán bộ, trong đó duy nhất 1 bác sĩ và 1 dược sĩ đại học, 2 lương y, 4 y sỹ, 1 dược sỹ trung học và một số cán bộ khác&#8230; Tuy lực lượng mỏng, cơ sở vật chất cực kỳ thiếu thốn, việc sử dụng YHCT để chăm sóc sức khỏe lúc đó còn hạn chế song Bệnh viện luôn cố gắng hoàn thành tốt nhiệm vụ được giao, liên tục được Ty Y tế tỉnh Hà Tây đánh giá là đơn vị hoàn thành tốt nhiệm vụ được giao.</p>
         <p><strong>Thời kỳ thuộc tỉnh Hà Sơn Bình (1976 -1991)</strong></p>
         <Image src={YHCY} alt="YHCY" width='1000' height='500' className={cx('image')}/>
-        <p><strong><em>Giai đoạn 1976-1982</em></strong></p>
+        <p><strong>Giai đoạn 1976-1982</strong></p>
         <p>Sau khi thành lập tỉnh Hà Sơn Bình bệnh viện vẫn đóng trên địa bàn Thị xã Sơn Tây; trong khi Thị xã Sơn Tây đã sáp nhập vào Thành phố Hà Nội. Thời kỳ này bệnh viện gặp rất nhiều khó khăn, từ tiếp nhận bệnh nhân, lương thực, thực phẩm, thuốc men đều tiếp nhận từ các huyện xa, phương tiện đi lại, vận chuyển chủ yếu bằng xe đạp. Cơ sở vật chất thiếu thốn, nhà cửa xuống cấp, chưa được cải tạo sửa chữa kịp thời, điều kiện làm việc hạn chế khiến tư tưởng cán bộ chưa thực sự yên tâm, ảnh hưởng không nhỏ tới hoạt động của bệnh viện. Tuy vậy, cấp ủy Đảng và lãnh đạo bệnh viện đã cố gắng thực hiện tốt vai trò lãnh đạo, tổ chức thực hiện hoàn thành nhiệm vụ chính trị của đơn vị.</p>
         <p><strong>Giai đoạn 1982-1991</strong></p>
         <p>Tháng 2/1982 bệnh viện được chuyển trụ sở về số 80 Quang Trung Thị xã Hà Đông (Văn phòng Sở Y tế cũ), đến tháng 5/1989 bệnh viện được chuyển trụ sở về số 99 Nguyễn Viết Xuân phường Quang Trung Hà Đông.</p>
