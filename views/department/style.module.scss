@@ -1,0 +1,30 @@
+.department-container{
+    width: 100%;
+    line-height: 5%;
+}
+
+.department-main{
+    margin: 0 auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.menu-left{
+    width: 35%; 
+}
+
+.department-info{
+    width: 65%;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-left{
+        width: 100%; 
+    }
+    
+    .department-info{
+        width: 100%;
+    }
+}
