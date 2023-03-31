@@ -59,7 +59,7 @@ export const MenuLink = [
   },
   {
     title: "Khác",
-    link: "/",
+    link: "/orther",
   },
 ];
 
@@ -226,22 +226,25 @@ export const departments = [
 ]
 // ];
 
-export const ListTimeBook = [
-  '8:00','8:30','9:00','9:30','10:00','10:30','13:30','14:00','14:30','15:00','15:30','16:00'
-]
-export const ListDateBook = [
+export const ListDoctor = [
   {
-    date:dayjs().format('D/M'),
-    text:'Hôm nay'
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 1",
+    city: "Hà nội"
   },
   {
-    date:dayjs().add(1, 'day').format('D/M'),
-    text:'Ngày mai'
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 2",
+    city: "Hà nội"
   },
   {
-    date:dayjs().add(2, 'day').format('D/M'),
-    text:'Ngày kia'
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 3",
+    city: "Hà nội"
+  },
+  {
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 4",
+    city: "Hà nội"
   }
 ]
-
-
