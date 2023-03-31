@@ -7,7 +7,7 @@ import {FaCalendarAlt} from 'react-icons/fa';
 import BannerImg from '@/components/Banner/BannerImg';
 import Newscard from '@/components/Newscard/Newscard';
 import Rightbar from '@/components/Rightbar/Rightbar';
-import Pagination from '@/components/Pagination';
+import Pagination from '@/components/Pagination'; 
 
 const cx = classNames.bind(style);
 

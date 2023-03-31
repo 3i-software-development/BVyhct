@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     margin: 7rem 0;
 
@@ -9,44 +10,39 @@
         width: 2.4rem;
         height: 2.4rem;
         font-size: 2rem;
-        color: var(--black);
-        background: unset;
+        color: gray;
+        // background: unset;
         display: flex;
-        align-items: center;
         justify-content: center;
 
         &:hover {
             cursor: pointer;
-            color: var(--primary);
+            color: var(--color-df);
         }
     }
 
     .btn-icon.dis {
         opacity: 0.5;
-
-        &:hover {
-            color: var(--black);
-        }
+        pointer-events: none;
     }
 
     .button {
-        width: 2.4rem;
-        height: 2.4rem;
-        background-color: var(--buttonPagination);
+        width: 2rem;
+        // height: 2.4rem;
         text-align: center;
         cursor: pointer;
-        color: var(--white);
-        padding: 4px;
-
+        color: black;
+        padding: 5px;
+        border-radius: 50%;
         &:hover {
-            background-color: var(--buttonPagination-active);
-            color: var(--black);
+            border: 2px solid var(--color-df);
+            color: var(--color-df);
         }
     }
 
     .button.active {
-        background-color: var(--buttonPagination-active);
-        color: var(--black);
-        padding: 4px;
+        border: 2px solid var(--color-df2);
+        color: var(--color-df);
+        padding: 3px;
     }
 }

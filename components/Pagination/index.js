@@ -11,13 +11,12 @@ function Pagination({ totalPosts, postPerPage, setPage, pageIndex }) {
 
     let pages = []
 
-
     for (let i = 1; i <= Math.ceil(totalPosts / postPerPage); i++) {
         pages.push(i)
     }
 
     return (<div className={cx('wrapper')}>
-        <Link href='#list' disabled={pageIndex === 1} className={cx('btn-icon', pageIndex === 1 ? 'dis' : null)} onClick={() => setPage(prev => prev - 1)}>
+        <Link href='#list' disabled={pageIndex === 1} className={cx('btn-icon', pageIndex === 1 ? 'dis' : null)} onClick={() => pageIndex !== 1 && setPage(prev => prev - 1)}>
             <MdKeyboardArrowLeft />
         </Link>
 

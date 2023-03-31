@@ -14,11 +14,13 @@ const BannerImg = ({title}) => {
         <Image src={Bnimg} width='2000' height='1000' alt='docto-yhct'/>
         <div className={cx('bn-text')}>
             <h1>{title}</h1>
+            
             <div className={cx('crum')}>
                <Link href='/'>Trang chủ </Link>
                <IoIosArrowForward/>
                <span>{title}</span>
             </div>
+            
         </div>
     </div>
   )
