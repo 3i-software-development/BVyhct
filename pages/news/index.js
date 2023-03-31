@@ -11,7 +11,7 @@ import Pagination from '@/components/Pagination';
 
 const cx = classNames.bind(style);
 
-const Index = () => {
+const Index = () => { 
   const [page, setPage] = useState(1);
   const lastIndex = page * 6
     const firstIndex = lastIndex - 6;
