@@ -6,7 +6,7 @@ import DoctorCard from "@/components/DoctorCard/DoctorCard";
 
 const cx = classNames.bind(style);
 
-function DoctorList() {
+function DoctorList({clas}) {
     return (
         // <div>
         //     <section className={cx('team-area')}>
@@ -20,7 +20,7 @@ function DoctorList() {
         //         </div>
         //     </section>
         // </div>
-        <div className={cx('news-container')}>
+        <div className={cx('news-container', clas)}>
             <h2>Danh sách bác sĩ
                 <hr />
             </h2>
