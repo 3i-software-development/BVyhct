@@ -8,7 +8,6 @@ const cx = classNames.bind(style);
 const Introduce2 = () => {
   return (
     <div className={cx("news-container")}>
-      
       <h2>
         Giới thiệu
         <hr />
