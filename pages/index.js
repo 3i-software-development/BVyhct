@@ -12,6 +12,7 @@ import Introduce2 from '@/views/home/Introduce2';
 import Logo from '@/public/assets/logo.png';
 import Price from '@/views/service/price';
 import DoctorList from '@/views/home/DoctorList';
+import Formadvise from '@/components/Formadvise/Formadvise';
 
 const cx = classNames.bind(style);
 
@@ -27,8 +28,10 @@ export default function Home() {
       {/* <link rel="icon" type="image/png" sizes="20x20" href='/logo.png' /> */}
       <link rel="icon" href="/logo.png"/>
     </Head>
+    <Banner/>
      <div className={cx('container')}>
-      <Banner/>
+      
+      <Formadvise/>
       <Introduce2/>
       <Introduce/>
       <Deapartments/>
