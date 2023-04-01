@@ -1,0 +1,81 @@
+.container {
+    // padding-right: 13%;
+
+    h5 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: var(--color-df);
+        padding: 10px 20px;
+        margin: 0;
+        color: white;
+    }
+
+    p {
+        color: gray;
+    }
+}
+
+.departments {
+    margin-bottom: 10%;
+    border: 0.5px solid rgb(214, 214, 214);
+    a{
+        display: block;
+        padding: 5%;
+        border-bottom: 1px solid rgb(214, 214, 214);
+        transition: 0.3s;
+    }
+
+    a:hover {
+        background-color:#6190b9;
+        color: white !important;
+    }
+}
+
+.opening-hours {
+    .hours-list {
+        // padding: 0 5%;
+        margin-bottom: 10%;
+        border: 0.5px solid rgb(214, 214, 214);
+        .hours-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(214, 214, 214);
+            padding: 5% ;
+
+            p {
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+.contact {
+    margin-bottom: 20%;
+    border: 0.5px solid rgb(214, 214, 214);
+    .item-contact {
+        padding: 4% 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(214, 214, 214);
+    }
+
+    .icon-header {
+        font-size: 30px;
+        color: var(--color-df);
+    }
+
+    .text-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        p{
+            margin: 0 !important;
+        }
+    }
+}
+

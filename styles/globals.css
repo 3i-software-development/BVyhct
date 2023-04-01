@@ -134,3 +134,14 @@ a{
   color: black !important;
   text-decoration: none !important;
 }
+
+button{
+  border: none;
+  background: none;
+}
+svg{
+  cursor: pointer;
+}
+input{
+  outline: none;
+}

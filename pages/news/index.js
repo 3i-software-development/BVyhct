@@ -7,11 +7,11 @@ import {FaCalendarAlt} from 'react-icons/fa';
 import BannerImg from '@/components/Banner/BannerImg';
 import Newscard from '@/components/Newscard/Newscard';
 import Rightbar from '@/components/Rightbar/Rightbar';
-import Pagination from '@/components/Pagination';
+import Pagination from '@/components/Pagination'; 
 
 const cx = classNames.bind(style);
 
-const Index = () => {
+const Index = () => { 
   const [page, setPage] = useState(1);
   const lastIndex = page * 6
     const firstIndex = lastIndex - 6;

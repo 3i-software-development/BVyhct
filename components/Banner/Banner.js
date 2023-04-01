@@ -40,7 +40,7 @@ const Banner = () => {
             </Swiper>
         {/* <Image src={Bn0} alt='banner-thanhthang' width={1500} height={1000} className={cx('img-banner')}/> */}
 
-        <div className={cx('form')}>
+        {/* <div className={cx('form')}>
             <div className={cx('left')}>
                 <FaCalendarAlt/>
                 Để lại nhu cầu khám
@@ -52,7 +52,7 @@ const Banner = () => {
                 <input placeholder='Khu vực'/>
             </div>
             <button className={cx('right')}><BsFillSendFill/></button>
-        </div>
+        </div> */}
     </div>
   )
 }

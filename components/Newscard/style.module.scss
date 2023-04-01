@@ -55,3 +55,18 @@
         color:#0392ce !important ;
     }
 }
+
+@media only screen and (max-width:900px) {
+    .news-item{
+        flex-direction: row;
+        .img{
+            width: 30%;
+            height: 100%;
+        }
+        .main{
+            width: 50%;
+            flex: 1;
+            padding-left: 5%;
+        }
+    }
+}

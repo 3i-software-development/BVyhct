@@ -8,54 +8,66 @@ import { CiStethoscope } from "react-icons/ci";
 import { MdAirlineSeatLegroomExtra} from "react-icons/md";
 import { GiHeartOrgan,GiTripleNeedle,GiSkeletalHand,GiMedicines} from "react-icons/gi";
 import { IoNutritionOutline} from "react-icons/io";
+import { SwiperSlide, Swiper } from 'swiper/react';
+import { Autoplay } from 'swiper';
+
+import 'swiper/css';
 
 const cx = classNames.bind(style);
 
-
 function Deapartments() {
 
-  const DepartmentLists = departments.map((DepartmentLists) => (
-    <div key={DepartmentLists.id} className={cx("p-3","m-2","department-card-container")}>
-      <Card className={cx("departments-card")} style={{ width: "16rem" }} >
-          <div className={cx("departments-icon-container","p-3")}>
-            <CiStethoscope className={cx("d-icon", "text-center")} />
-            {/* {DepartmentLists.icon} */}
-          </div>
-          <div className={cx("departments-card-body","my-3")}>
-            <Card.Title className={cx("text-center")}>{DepartmentLists.name}</Card.Title>
-            <div className={cx("departments-card-description","mx-3")}>
-              <Card.Text >
-                {DepartmentLists.description.map((items, i) => (
-                  <span className={cx("departments-card-item")} key={i}>{items}</span>
-                ))}
-              </Card.Text>
-            </div>
-
-          </div>
-
-      </Card>
-      <button variant="primary" className={cx("departments-card-button","mt-3")}>Xem Thêm</button>
-
-    </div>
-  ));
   return (
-    <div className={cx("Department-container","mt-5")}>
-      <Head>
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-          crossorigin="anonymous"
-        ></link>
-      </Head>
-        <div className={cx("container")}>
-          <h1 className='text-center'>Các Chuyên Khoa</h1>
-          <div className={cx("d-flex","listcards")}>
-            {DepartmentLists}
-          </div>
-        </div>
+    <div className={cx('news-container')}>
+      <h2>Chuyên khoa
+      <hr/>
+      </h2>
 
+<Swiper
+className={cx('department')}
+            modules={[Autoplay]}
+            grabCursor={true}
+            autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+            }}
+            loop={true}
+            slidesPerView="auto"
+            breakpoints={{
+                0: {
+                    slidesPerView: 1,
+                },
+                800: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+                1600: {
+                    slidesPerView: 4,
+                },
+            }}
+        >
+            {departments.map((item, index) => (
+                <SwiperSlide key={index} className={cx('depart-item-slide')}>
+
+                    <div className={cx('depart-item')}>
+                      <div className={cx('depart-icon')}>
+                        {item.icon}
+                        </div>
+                        <div className={cx('depart-item-main')}>
+                          <h5>{item.name}</h5>
+                          <p>Khoa Ngoại – Phụ là khoa lâm sàng thực hiện khám bệnh, chữa bệnh cho bệnh nhân nội trú bằng các phương pháp dùng thuốc, không dùng thuốc YHCT, YHHĐ kết hợp với thủ thuật,  phẫu thuật của YHHĐ</p>
+                        </div>
+                        <button className={cx('depart-btn')}>Xem thêm</button>
+                    </div>
+                </SwiperSlide>
+            ))}
+
+        </Swiper>
+       
     </div>
+  
   );
 }
 

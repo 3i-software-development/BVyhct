@@ -13,7 +13,7 @@ const index = () => {
     <div className={cx('container')}>
         <BannerImg title="Giới thiệu"/>
         <h4>Bệnh viện Y học cổ truyền Hà Đông</h4>
-        <Image src= {YHDT} alt="YHDT" width='1000' height='500' className={cx('image')} />
+        <Image src= {YHDT} alt="YHDT" width='1000' height='500' className={cx('image')}/>
         
         <p>Bệnh viện Y học cổ truyền (YHCT) Hà Đông tiền thân là Bệnh viện Đông y tỉnh Hà Tây thành lập theo Quyết định số 1021/TCCB ngày 20 tháng 5 năm 1968 của Ủy ban Hành chính tỉnh Hà Tây.</p>
         <p>Thời điểm này cuộc kháng chiến chống Mỹ cứu nước đang sôi sục với khí thế của Chiến dịch Mậu Thân (1968); đánh bại cuộc chiến tranh phá hoại miền Bắc lần thứ nhất của Mỹ và chuẩn bị đương đầu với không quân Mỹ ra miền Bắc lần thứ hai… Bệnh viện Đông y Hà Tây ra đời với nhiệm vụ kế thừa và phát huy vốn quý của Đông y, kết hợp với Tây y để chăm sóc sức khỏe nhân dân, cán bộ chiến sĩ trên địa bàn, phục vụ sản xuất và phục vụ chiến đấu.</p>

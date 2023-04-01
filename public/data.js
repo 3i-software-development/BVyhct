@@ -17,31 +17,31 @@ export const MenuLink = [
     list: [
       {
         title: "Khoa Khám bệnh",
-        link: "/",
+        link: "/departments/1",
       },
       {
         title: "Khoa Ngoại phụ",
-        link: "/",
+        link: "/departments/2",
       },
       {
         title: "Khoa Nội tổng hợp",
-        link: "/",
+        link: "/departments/3",
       },
       {
         title: "Khoa Châm cứu - PHCN",
-        link: "/",
+        link: "/departments/4",
       },
       {
         title: "Khoa Xét nghiệm & Chẩn đoán hình ảnh.",
-        link: "/",
+        link: "/departments/5",
       },
       {
         title: "Khoa Dược",
-        link: "/",
+        link: "/departments/6",
       },
       {
         title: "Khoa Dinh dưỡng",
-        link: "/",
+        link: "/departments/7",
       },
     ],
   },
@@ -59,7 +59,7 @@ export const MenuLink = [
   },
   {
     title: "Khác",
-    link: "/",
+    link: "/orther",
   },
 ];
 
@@ -244,4 +244,25 @@ export const ListDateBook = [
   }
 ]
 
-
+export const ListDoctor = [
+  {
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 1",
+    city: "Hà nội"
+  },
+  {
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 2",
+    city: "Hà nội"
+  },
+  {
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 3",
+    city: "Hà nội"
+  },
+  {
+    img: "/banner/doctor.jpeg",
+    title: "Tên bác sĩ 4",
+    city: "Hà nội"
+  }
+]

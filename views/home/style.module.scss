@@ -1,7 +1,14 @@
+// .container{
+
+// }
+.slide-item{
+    height: 350px;
+    padding: 2%;
+}
 .introduce-container{
     margin-top: 150px;
     width:100%;
-    height:300px;
+    // height:300px;
     background-image: url(../../public/assets/istockphoto-638377134-612x612.jpg);
     background-size: cover;
 }
@@ -32,77 +39,18 @@
     color: white;
     font-size: 56px;
 }
-.carousel-container{
-    height:300px;
-}
+// .carousel-container{
+//     height: 350px;
+// }
 .carousel-indicators button {
 
     background-color: red;
 }
 
 
-
-// Department area
-
-
-.Department-container{
-
-    position: relative;
-}
-.listcards{
-    overflow-x: scroll;
-}
-.department-card-container{
-    border: 2px solid rgb(232,232,232);
-}
-.departments-card{
-    border: none;
-}
-
-.departments-card-body{
-    height: 120px;
-    overflow: hidden;
-    margin-bottom: 30px;
-
-}
-.departments-icon-container{
-    width: 100%;
-    text-align: center;
-    background-color: rgba(245, 245, 245, 0.4);
-    height: 120px;
-}
-.d-icon{
-    font-size:80px;
-    color: blue;
-    text-align: center;
-}
-.departments-card-item{
-    list-style: none;
-    color:  rgba(0,0,0,0.7);
-}
-
-.departments-card-button{
-    width:100px;
-    height: 35px;
-    border-radius: 20px 4px 20px 4px;
-    border: 2px solid rgb(232,232,232);
-
-}
-.department-card-container:hover .departments-icon-container{
-    background-color: rgba(37, 37, 250, 0.8);
-    transition: 1s ease-in;
-}
-.department-card-container:hover .d-icon {
-    color: white;
-}
-.departments-card-button:hover{
-    background-color: rgba(37, 37, 250, 0.8);
-    transition: 1s ease-in;
-}
-
 //news
 .news-container{
-    padding: 5% 20%;
+    padding: 5% 15%;
     background-color: #fcfcfc;
     h2{
         padding: 15px 0;
@@ -123,6 +71,10 @@
     }
 }
 
+// docter
+.info {
+    padding: 0 !important;
+}
 
 //video
 .intro-container{
@@ -139,4 +91,113 @@
     }
     text-align: justify;
     text-justify: inter-word;
+}
+
+//depart
+.department{
+    align-items: stretch;
+}
+.depart-item-slide{
+    padding: 10px;
+    height: 25vw;
+    min-height: 350px;
+}
+.depart-item{
+    border: 0.5px solid rgb(228, 226, 226);
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+    .depart-icon{
+        width: 100%;
+        padding: 20px 0;
+        transition: 0.3s;
+    }
+    svg{
+        font-size: 5rem;
+        color: var(--color-df);
+        transition: 0.3s;
+        margin: 0 auto;
+        display: block;
+    }
+    .depart-item-main{
+        padding: 10px 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        h5{
+            flex: 1;
+            text-align: center;
+            font-size: 1rem;
+    }
+    p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;  
+    }}
+    button{
+        padding: 10px 20px;
+        border: 0.5px solid rgb(224, 223, 223);
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+}
+.depart-item:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .depart-icon{
+        background-color: #0392ce;
+    }
+    svg{
+        color: white;
+    }
+    button{
+        color: white;
+        background-color: #0392ce;
+    }
+}
+
+
+//respon
+@media only screen and (max-width: 1500px) {
+    .news-container{
+        padding: 5% 10%;
+    }
+}
+@media only screen and (max-width: 1300px) {
+  
+    .depart-icon{
+        svg{
+            font-size: 4rem;
+        }
+    }
+    .depart-item-slide{
+        min-height: 300px;
+    }
+    
+}
+@media only screen and (max-width: 900px) {
+    .news-list{
+        flex-direction: column;
+        gap:20px;
+    }
+    .news-item-container{
+        width: 100% !important;
+        height: 207px !important;
+    }
+    .item-content{
+        flex-wrap: wrap;
+        .card{
+            width: 45% !important;
+        }
+    }
+}
+@media only screen and (max-width: 700px) {
+    .news-container{
+        padding: 5%;
+    }
+   
 }

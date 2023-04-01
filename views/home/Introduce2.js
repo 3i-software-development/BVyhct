@@ -7,7 +7,12 @@ const cx = classNames.bind(style);
 
 const Introduce2 = () => {
   return (
+<<<<<<<<< Temporary merge branch 1
     <div className={cx("news-container")}>
+      
+=========
+    <div className={cx("intro-container")}>
+>>>>>>>>> Temporary merge branch 2
       <h2>
         Giới thiệu
         <hr />

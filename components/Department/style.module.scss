@@ -1,0 +1,48 @@
+.info-container {
+    width: 100%;
+
+    h5 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 3%;
+        color: var(--color-df);
+    }
+
+
+    p {
+        color: gray;
+    }
+
+    img {
+        width: 100% !important;
+        height: auto;
+    }
+        
+    .info-text {
+        padding: 0 5%;
+    
+        li {
+            padding-bottom: 2%;
+        }
+    }
+
+    .info-technique {
+        margin-bottom: 5%;
+
+        .technique-table {
+            width: 100%;
+        }
+
+        .technique-table,
+        th,
+        td {
+            border: 1px solid rgb(214, 214, 214);
+            padding: 10px;
+        }
+    }
+
+
+    .info-docter {
+        padding: 0% !important;
+    }
+}
