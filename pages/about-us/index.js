@@ -11,7 +11,7 @@ const cx = classNames.bind(style);
 const index = () => {
   return (
     <div className={cx('container')}>
-        <BannerImg />
+        <BannerImg title="Giới thiệu"/>
         <h4>Bệnh viện Y học cổ truyền Hà Đông</h4>
         <Image src= {YHDT} alt="YHDT" width='1000' height='500' className={cx('image')} />
         
