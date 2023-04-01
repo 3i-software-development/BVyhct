@@ -33,19 +33,19 @@ const Footer = () => {
                 <hr />
                 <ul class="list-unstyled mb-0">
                   <li class="mb-4">
-                    <a href="#!" class="text-white ">Trang chủ</a>
+                    <a href="#!" className={cx('footer-link')}>Trang chủ</a>
                   </li>
                   <li class="mb-4">
-                    <a href="#!" class="text-white ">Chuyên khoa</a>
+                    <a href="#!" className={cx('footer-link')}>Chuyên khoa</a>
                   </li>
                   <li class="mb-4">
-                    <a href="#!" class="text-white ">Bác sĩ</a>
+                    <a href="#!" className={cx('footer-link')}>Bác sĩ</a>
                   </li>
                   <li class="mb-4">
-                    <a href="#!" class="text-white">Tuyển dụng</a>
+                    <a href="#!" className={cx('footer-link')}>Tuyển dụng</a>
                   </li>
                   <li class="mb-4">
-                    <a href="#!" class="text-white">Tin tức</a>
+                    <a href="#!" className={cx('footer-link')}>Tin tức</a>
                   </li>
                 </ul>
               </div>

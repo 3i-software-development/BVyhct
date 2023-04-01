@@ -36,7 +36,6 @@ export default function Home() {
       <Introduce/>
       <Deapartments/>
       <News/>
-      <Price />
       <DoctorList/>
      </div>
     </>
