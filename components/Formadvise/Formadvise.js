@@ -13,6 +13,7 @@ const Formadvise = () => {
         <FaCalendarAlt/>
         Để lại nhu cầu khám
     </div>
+    <div className={cx('main-container')}>
     <div className={cx('main')}>
         <input placeholder='Họ tên'/>
         <input placeholder='Số điện thoaị'/>
@@ -20,6 +21,7 @@ const Formadvise = () => {
         <input placeholder='Khu vực'/>
     </div>
     <button className={cx('right')}><BsFillSendFill/></button>
+    </div>
 </div>
   )
 }

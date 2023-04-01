@@ -13,6 +13,7 @@ const Newscard = ({data}) => {
       <div className={cx("img")}>
         <Image src={data.img} width="500" height="500" alt={data.title} />
       </div>
+      <div className={cx("main")}>
       <h6>{data.title}</h6>
       <div className={cx("space")} />
       <p className={cx("news-des")}>{data.description}</p>
@@ -21,6 +22,7 @@ const Newscard = ({data}) => {
         {data.icon && data.icon}
         {data.date}
       </p>
+      </div>
     </Link>
   );
 };

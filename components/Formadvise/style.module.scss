@@ -3,7 +3,7 @@
     position: relative;
     top:-80px;
     display: flex;
-    width: 60%;
+    width: 850px;
     margin: 0 auto;
     background-color: white;
     justify-content: space-between;
@@ -29,6 +29,7 @@
 .main{
     display: flex;
     padding: 2vw;
+    flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 70%;
@@ -47,4 +48,37 @@
     color: white;
     padding: 20px;
     border-radius: 5px;
+}
+.main-container{
+    display: flex;
+    flex: 1;
+}
+@media only screen and (max-width: 950px) {
+  .form{
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .main{
+    width: 100%;
+    input{
+       width: 100%;
+    }
+    
+  }
+  .main-container{
+    flex-direction: column;
+    button{
+        margin: 2vw !important;
+        margin-top: 0 !important;
+        padding: 10px 20px;
+    }
+  }
+  .left{
+    width: 30%;
+    svg{
+        font-size: 20px;
+    }
+  }
 }

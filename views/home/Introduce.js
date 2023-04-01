@@ -38,17 +38,17 @@ const Introduce = () => {
         className={cx("container", "p-3", "carousel-container")}
       >
         <Carousel.Item>
-          <div className={cx("container")}>
+          <div className={cx("container",'slide-item')}>
             <h3 className="text-success text-center text-white">
               Chúng tôi là ai?
             </h3>
             <h6 className={cx("h6 text-center text-white")}>
             Bệnh viện Y học cổ truyền (YHCT) Hà Đông tiền thân là Bệnh viện Đông y tỉnh Hà Tây thành lập theo Quyết định số 1021/TCCB ngày 20 tháng 5 năm 1968 của Ủy ban Hành chính tỉnh Hà Tây và phát triển với sứ mệnh chăm sóc bằng tài năng, y đức và sự thấu cảm.
             </h6>
-            <div className={cx("container", "mt-5")}>
+            <div className={cx( "mt-5")}>
               <div
                 className={cx(
-                  "introduce-icon-container justify-content-around row"
+                  "introduce-icon-container justify-content-around row",'item-content'
                 )}
               >
                 <div className={cx("card", "col-sm-12", "col-md-6","col-lg-3")}>
@@ -91,7 +91,7 @@ const Introduce = () => {
         {/* Thành Tựu */}
 
         <Carousel.Item>
-          <div className={cx("container")}>
+          <div className={cx("container",'slide-item')}>
             <h3 className="text-success text-center text-white">
               Các thành tựu đạt được
             </h3>
@@ -100,10 +100,10 @@ const Introduce = () => {
               tựu quan trọng để đóng góp cho nền y học nước nhà và nhận được
               nhiều sự tin tưởng của bệnh nhân trên cả nước
             </h6>
-            <div className={cx("container", "mt-5")}>
+            <div className={cx( "mt-5")}>
               <div
                 className={cx(
-                  "introduce-icon-container justify-content-around row"
+                  "introduce-icon-container justify-content-around row","item-content"
                 )}
               >
                 <div className={cx("card", "col-sm-12", "col-md-6","col-lg-3")}>
@@ -134,7 +134,7 @@ const Introduce = () => {
                   <GiLaserBlast className={cx("icon")} />
                   <div className="card-body">
                     <p className="card-text text-white mt-2">
-                      Triển khai khoa phục hồi chức năng thực hiện nhiều kỹ thuật mới như: Xung kích điều trị, Laser nội mạch, Laser chiếu ngoài,v..v
+                      Triển khai khoa phục hồi chức năng thực hiện nhiều kỹ thuật mới 
                     </p>
                   </div>
                 </div>
